@@ -1,0 +1,200 @@
+:root {
+  --primary-font: Roboto, sans-serif;
+  --logo-font: Raleway, sans-serif;
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --sab-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --modal-overlay: #2e2f42;
+  --hero-background: #2e2f42;
+  --white-background: #ffffff;
+  --modal-background: #fcfcfc;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--white-background);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* Header */
+.logo {
+  font-family: var(--logo-font);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  color: var(--primary-brand);
+}
+.logo-web {
+  color: var(--primary-brand);
+}
+.logo-studio-light {
+  color: var(--light);
+}
+.logo-studio-dark {
+  color: var(--dark);
+}
+
+/* Site nav */
+.site-nav-a {
+  text-decoration: none;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.site-nav-a:hover,
+.site-nav-a:focus {
+  color: var(--pressed-state);
+}
+
+.current {
+  color: var(--pressed-state);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address {
+  font-style: normal;
+}
+
+.adress-a {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.adress-a:hover,
+.adress-a:focus {
+  color: var(--pressed-state);
+}
+
+/* Main */
+.hero {
+  background-color: var(--dark);
+}
+.hero-title {
+  color: var(--white-background);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+.hero-btn {
+  background-color: var(--primary-brand);
+  color: var(--white-background);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--pressed-state);
+}
+
+/* Section 2 - Properties  */
+.prop-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.properties-text {
+  color: var(--text);
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+/* Section 3 - Solution  */
+.solution-header {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+
+/* Section 4 - Team  */
+.team {
+  background-color: var(--light);
+}
+.team-header {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+.team-li {
+  background-color: var(--white-background);
+}
+/* team-h3 = prop-header */
+
+/* Portfolio Page */
+.nav-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+  background-color: var(--light);
+  font-family: var(--primary-font);
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  color: var(--white-background);
+  background-color: var(--pressed-state);
+}
+
+.active-btn {
+  color: var(--light);
+  background: var(--pressed-state);
+}
+
+.port-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark);
+}
+.footer-p {
+  color: var(--light);
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
