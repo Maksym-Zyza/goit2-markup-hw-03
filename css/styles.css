@@ -96,6 +96,9 @@ img {
   display: flex;
   gap: 40px;
 }
+.address-li {
+  padding: 24px 0;
+}
 
 .logo {
   margin-right: 76px;
@@ -138,17 +141,14 @@ img {
 .address {
   font-style: normal;
 }
-.adress-li {
-  padding: 24px 0;
-}
-.adress-a {
+.address-a {
   padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
 }
-.adress-a:hover,
-.adress-a:focus {
+.address-a:hover,
+.address-a:focus {
   color: var(--pressed-state);
 }
 
