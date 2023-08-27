@@ -16,25 +16,72 @@
 }
 
 body {
+  margin: 0;
   color: var(--text);
   background-color: var(--white-background);
   font-family: var(--primary-font);
   font-size: 16px;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   cursor: pointer;
 }
 
+img {
+  display: inline-block;
+}
+
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+}
+
+.address-ul {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+}
+
 .logo {
+  margin-right: 76px;
   font-family: var(--logo-font);
   font-size: 18px;
   font-weight: 800;
@@ -91,9 +138,14 @@ button {
 
 /* Main */
 .hero {
+  text-align: center;
   background-color: var(--dark);
+  height: 600px;
 }
 .hero-title {
+  margin: 0 auto;
+  padding-top: 188px;
+  width: 496px;
   color: var(--white-background);
   text-align: center;
   font-family: Roboto;
@@ -103,6 +155,8 @@ button {
   letter-spacing: 1.12px;
 }
 .hero-btn {
+  margin-top: 48px;
+  padding: 16px 32px;
   background-color: var(--primary-brand);
   color: var(--white-background);
   font-family: var(--primary-font);
@@ -118,6 +172,12 @@ button {
 }
 
 /* Section 2 - Properties  */
+.properties-ul {
+  display: flex;
+  gap: 24px;
+  margin: 120px 156px;
+}
+
 .prop-header {
   font-weight: 500;
   font-size: 20px;
@@ -134,19 +194,28 @@ button {
 
 /* Section 3 - Solution  */
 .solution-header {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark);
+}
+
+.solution-ul {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
 }
 
 /* Section 4 - Team  */
 .team {
+  padding: 120px 156px;
   background-color: var(--light);
 }
 .team-header {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -154,13 +223,42 @@ button {
   text-transform: capitalize;
   color: var(--dark);
 }
+
+.team-ul {
+  display: flex;
+  gap: 24px;
+}
+
 .team-li {
+  text-align: center;
   background-color: var(--white-background);
 }
-/* team-h3 = prop-header */
+
+.team-li > h3 {
+  margin: 32px 0 8px 0;
+}
+.team-li > p {
+  margin-bottom: 32px;
+}
 
 /* Portfolio Page */
+.portfolio-nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 96px 0 72px 0;
+  gap: 24px;
+}
+
+.portfolio-cards-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+
 .nav-btn {
+  padding: 12px 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -181,6 +279,7 @@ button {
 }
 
 .port-header {
+  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -188,11 +287,22 @@ button {
   color: var(--dark);
 }
 
+.port-text {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  color: var(--text);
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
 /* Footer */
 .footer {
+  padding: 100px 156px;
   background-color: var(--dark);
 }
 .footer-p {
+  width: 312px;
+  margin-top: 16px;
   color: var(--light);
   font-family: var(--primary-font);
   line-height: 1.5;
