@@ -61,6 +61,7 @@ img {
 .flexSpaceBetween {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .visually-hidden {
   visibility: hidden;
@@ -85,9 +86,6 @@ img {
 .address-ul {
   display: flex;
   gap: 40px;
-}
-.adress-li {
-  padding: 24px 0;
 }
 
 .logo {
@@ -132,6 +130,7 @@ img {
   font-style: normal;
 }
 .adress-a {
+  padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
@@ -145,6 +144,9 @@ img {
 /* Section 1 - Hero  */
 .section-hero {
   padding: 188px 0;
+}
+
+.hero {
   text-align: center;
   background-color: var(--dark);
 }
@@ -305,8 +307,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
-.cards-li {
+.card-li {
   width: calc((100% - 48px) / 3);
 }
 .card-div {
